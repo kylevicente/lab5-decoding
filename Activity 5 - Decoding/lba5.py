@@ -44,7 +44,7 @@ repeat = 1
 while repeat == 1 or repeat =="Y":
 # Ask for file name
     filename = input("Enter file name: ")
-    filename = "Activity 5 - Decoding/" + filename
+    filename = "Activity 5 - Decoding/" + filename + ".txt"
 
     # Open the file
     file = open(filename, "r")
@@ -82,7 +82,7 @@ while repeat == 1 or repeat =="Y":
     print(decoded_message)
 
     repeat = input("Do you want to repeat the program?[Y/N]: ").upper()
-    if repeat != "Y" or repeat != "N":
+    while repeat != "Y" and repeat != "N":
         print("wrong input!")
         repeat = input("Do you want to repeat the program?[Y/N]: ").upper()
     if repeat != "Y":
